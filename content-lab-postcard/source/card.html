@@ -1,0 +1,111 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:Bodoni;src:url(fonts/bodoni-moda-latin-400-normal.woff2)}
+@font-face{font-family:Bodoni;font-style:italic;src:url(fonts/bodoni-moda-latin-400-italic.woff2)}
+@font-face{font-family:Manrope;font-weight:300;src:url(fonts/manrope-latin-300-normal.woff2)}
+@font-face{font-family:Manrope;font-weight:400;src:url(fonts/manrope-latin-400-normal.woff2)}
+@font-face{font-family:Manrope;font-weight:500;src:url(fonts/manrope-latin-500-normal.woff2)}
+@font-face{font-family:Manrope;font-weight:600;src:url(fonts/manrope-latin-600-normal.woff2)}
+:root{--ink:#0b0a08;--gold:#c9a66c;--gold2:#e4cfa3;--ivory:#f4eee3;--pink:#f062c8;--vio:#8a4dff;--mute:#a79f97}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{background:#333}
+.card{position:relative;width:8.75in;height:5.75in;overflow:hidden;background:var(--ink);color:var(--ivory);font-family:Manrope;font-weight:300}
+.card+.card{margin-top:.5in}
+.abs{position:absolute}
+.grain{inset:0;opacity:.11;mix-blend-mode:overlay}
+.caps{text-transform:uppercase;letter-spacing:.32em;font-weight:500;font-size:8.2px}
+.serif{font-family:Bodoni;font-weight:400;letter-spacing:-.005em}
+.gold{color:var(--gold)}
+.goldtxt{background:linear-gradient(100deg,#b8935a 0%,#e9d6ab 45%,#c9a66c 100%);-webkit-background-clip:text;color:transparent}
+/* ---------- FRONT ---------- */
+#front .haze1{left:-1.2in;top:-.6in;width:7in;height:7in;background:radial-gradient(closest-side,rgba(138,52,140,.50),rgba(96,40,130,.20) 45%,transparent 72%)}
+#front .haze2{right:-2in;bottom:-3.2in;width:7in;height:6in;background:radial-gradient(closest-side,rgba(201,166,108,.20),transparent 70%)}
+#front .frame{inset:.4in;border:.6px solid rgba(201,166,108,.55)}
+#front .frame2{inset:.455in;border:.3px solid rgba(201,166,108,.28)}
+#front .logo{left:.86in;top:1.235in;width:3.28in;height:3.28in;filter:drop-shadow(0 0 22px rgba(205,70,215,.42))}
+#front .rule{left:4.52in;top:1.5in;width:.6px;height:2.75in;background:linear-gradient(180deg,transparent,var(--gold) 18%,var(--gold) 82%,transparent)}
+#front .copy{left:4.9in;top:1.235in;height:3.28in;width:3.35in;display:flex;flex-direction:column;justify-content:center;align-items:flex-start}
+#front .eyebrow{display:flex;align-items:center;gap:.11in;white-space:nowrap}
+#front .eyebrow b{font-weight:600;color:var(--pink);text-shadow:0 0 9px rgba(240,98,200,.55)}
+#front .eyebrow i{width:.5px;height:9px;background:#6d6560}
+#front .eyebrow span{color:#cfc6c4}
+#front h1{font-size:32px;line-height:1.12;margin-top:.26in;white-space:nowrap}
+#front p{margin-top:.24in;font-size:10.6px;line-height:1.68;color:#bdb4ab;width:3.05in}
+#front .cta{margin-top:.27in;display:inline-flex;align-items:center;gap:.12in;background:linear-gradient(100deg,#c19d62,#dcc392 55%,#c9a66c);color:#17130c;font-weight:600;font-size:10.2px;letter-spacing:.02em;padding:.105in .2in}
+#front .cta small{font-weight:500;font-size:10.2px;letter-spacing:.04em}
+#front .foot{left:.4in;right:.4in;bottom:.59in;display:flex;justify-content:center;align-items:center;gap:.17in;color:#b5aba1;font-size:7.4px}
+#front .foot i{width:3px;height:3px;border-radius:50%;background:var(--gold)}
+/* ---------- BACK ---------- */
+#back{background:var(--ivory);color:#17130c}
+#back .panel{left:0;top:0;bottom:0;width:3.875in;background:var(--ink);overflow:hidden}
+#back .haze1{left:-2.4in;top:-2.6in;width:6in;height:6in;background:radial-gradient(closest-side,rgba(138,52,140,.42),rgba(96,40,130,.15) 50%,transparent 72%)}
+#back .haze2{left:.6in;bottom:-3in;width:5in;height:5in;background:radial-gradient(closest-side,rgba(201,166,108,.16),transparent 70%)}
+#back .seam{left:3.875in;top:0;bottom:0;width:1.6px;background:linear-gradient(180deg,#b8935a,#e9d6ab 50%,#b8935a)}
+#back .col{left:.5in;top:.58in;width:2.95in;color:var(--ivory)}
+#back .eyebrow b{font-weight:600;color:var(--pink);text-shadow:0 0 9px rgba(240,98,200,.55)}
+#back h2{font-size:24.5px;line-height:1.12;margin-top:.17in}
+#back .lede{margin-top:.15in;font-size:9.3px;line-height:1.65;color:#bdb4ab}
+#back ul{list-style:none;margin-top:.2in;border-top:.5px solid rgba(201,166,108,.4)}
+#back li{display:flex;align-items:baseline;gap:.16in;padding:.082in 0;border-bottom:.5px solid rgba(201,166,108,.4)}
+#back li em{font-family:Bodoni;font-style:italic;color:var(--gold);font-size:11px;width:.2in}
+#back li strong{font-weight:500;font-size:9.6px;color:var(--ivory);letter-spacing:.01em}
+#back li span{margin-left:auto;font-size:8px;color:#9d948b}
+#back .book{left:.5in;bottom:.5in;width:2.95in;display:flex;align-items:center;gap:.2in;color:var(--ivory)}
+#back .qr{flex:none;width:.98in;height:.98in;background:var(--ivory);padding:.09in}
+#back .qr img{display:block;width:100%;height:100%;image-rendering:pixelated}
+#back .book .t1{color:var(--gold)}
+#back .book .t2{font-family:Bodoni;font-size:15.5px;margin-top:.07in;line-height:1.15}
+#back .book .t3{font-size:8.2px;line-height:1.6;color:#bdb4ab;margin-top:.08in}
+#back .ret{left:4.2in;top:.5in;display:flex;align-items:center;gap:.13in}
+#back .ret img{width:.62in;height:.62in}
+#back .ret div{font-size:7.6px;line-height:1.55;color:#3a342c;font-weight:400}
+#back .ret b{display:block;font-weight:600;letter-spacing:.24em;font-size:7.2px;text-transform:uppercase;color:#17130c;margin-bottom:1px}
+.guide{display:none}
+body.guides .guide{display:block;position:absolute;border:1px dashed rgba(0,160,255,.9);color:rgba(0,120,220,.95);font:600 7px Manrope;padding:2px 3px;z-index:9}
+</style></head><body>
+<svg width="0" height="0" style="position:absolute"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="7"/><feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .55 0"/></filter></svg>
+
+<section class="card" id="front">
+  <div class="abs haze1"></div><div class="abs haze2"></div>
+  <svg class="abs grain" width="100%" height="100%"><rect width="100%" height="100%" filter="url(#n)"/></svg>
+  <div class="abs frame"></div><div class="abs frame2"></div>
+  <img class="abs logo" src="logo-dark.png">
+  <div class="abs rule"></div>
+  <div class="abs copy">
+    <div class="eyebrow caps"><b>Grand Opening</b><i></i><span>Miramar Beach, Florida</span></div>
+    <h1 class="serif">Your content engine,<br><span class="goldtxt">in one room.</span></h1>
+    <p>Four sets, 4K multi-camera and broadcast lighting, now open in Miramar Beach. Book by the hour or join as a member, and let yourself in day or night.</p>
+    <div class="cta">Book a session <small>zencontentlab.com&nbsp;&nbsp;→</small></div>
+  </div>
+  <div class="abs foot caps"><span>Four Sets</span><i></i><span>4K Multi-Camera</span><i></i><span>Broadcast Lighting</span><i></i><span>Open Day &amp; Night</span></div>
+  <div class="guide" style="inset:.125in">trim</div><div class="guide" style="inset:.375in;border-color:rgba(0,220,120,.9);color:rgb(0,170,90)">safe ¼"</div>
+</section>
+
+<section class="card" id="back">
+  <div class="abs panel">
+    <div class="abs haze1"></div><div class="abs haze2"></div>
+    <svg class="abs grain" width="100%" height="100%"><rect width="100%" height="100%" filter="url(#n)"/></svg>
+    <div class="abs col">
+      <div class="eyebrow caps"><b>You&rsquo;re Invited</b></div>
+      <h2 class="serif">The doors are open.<br><span class="goldtxt">Come make something.</span></h2>
+      <p class="lede">A premium content studio in Miramar Beach. Walk in, press record, and leave with content that looks like a full crew made it.</p>
+      <ul>
+        <li><em>01</em><strong>Four sets</strong><span>one studio</span></li>
+        <li><em>02</em><strong>4K multi-camera</strong><span>cinema-sharp</span></li>
+        <li><em>03</em><strong>Broadcast lighting</strong><span>pro-grade</span></li>
+        <li><em>04</em><strong>Day-or-night access</strong><span>hourly or membership</span></li>
+      </ul>
+    </div>
+    <div class="abs book">
+      <div class="qr"><img src="qr.png"></div>
+      <div><div class="caps t1">Scan to book</div><div class="t2">zencontentlab.com</div>
+      <div class="t3">9375 Emerald Coast Parkway, Suite 25<br>Miramar Beach, FL 32550</div></div>
+    </div>
+  </div>
+  <div class="abs seam"></div>
+  <div class="abs ret"><img src="logo-light.png"><div><b>The Content Lab</b>9375 Emerald Coast Parkway, Suite 25<br>Miramar Beach, FL 32550</div></div>
+  <div class="guide" style="inset:.125in">trim</div><div class="guide" style="inset:.375in;border-color:rgba(0,220,120,.9);color:rgb(0,170,90)">safe ¼"</div>
+  <div class="guide" style="right:.125in;bottom:.125in;width:4.75in;height:.625in;border-color:rgba(255,80,0,.9);color:rgb(220,70,0)">USPS barcode clear zone</div>
+  <div class="guide" style="right:.375in;top:.375in;width:1.3in;height:1.1in;border-color:rgba(255,80,0,.9);color:rgb(220,70,0)">postage</div>
+  <div class="guide" style="right:.5in;bottom:.95in;width:3.6in;height:2in;border-color:rgba(255,80,0,.9);color:rgb(220,70,0)">address block (printed by Mailbox Power)</div>
+</section>
+</body></html>
