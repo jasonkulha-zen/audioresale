@@ -4,6 +4,7 @@
 |---|---|
 | `print/front-8.75x5.75-bleed.png`, `print/back-8.75x5.75-bleed.png` | Upload these. 2625 x 1725 px, 300 dpi, includes 1/8" bleed on every side. |
 | `print/front-8.5x5.5-trim.png`, `print/back-8.5x5.5-trim.png` | Use instead if the editor asks for the exact trim size (2550 x 1650 px). |
+| `print/front-photo-*.png`, `print/content-lab-grand-opening-postcard-photo.pdf` | Photo-led front (interview set photo), same sizes; pairs with the same back. |
 | `print/content-lab-grand-opening-postcard.pdf` | Both sides, bleed size, one PDF. |
 | `proofs/` | Previews, plus versions showing trim, safe area, postage, address and barcode zones. |
 | `source/` | `card.html` + assets. Re-render with `node render.js <outdir>` (Playwright). |

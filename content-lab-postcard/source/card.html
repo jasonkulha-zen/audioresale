@@ -59,6 +59,24 @@ html,body{background:#333}
 #back .ret img{width:.62in;height:.62in}
 #back .ret div{font-size:7.6px;line-height:1.55;color:#3a342c;font-weight:400}
 #back .ret b{display:block;font-weight:600;letter-spacing:.24em;font-size:7.2px;text-transform:uppercase;color:#17130c;margin-bottom:1px}
+
+/* ---------- FRONT, PHOTO-LED ---------- */
+#frontp .photo{left:0;top:0;bottom:0;width:4.62in;background:url(set.jpg) 50% 62%/cover}
+#frontp .fade{left:3.5in;top:0;bottom:0;width:1.14in;background:linear-gradient(90deg,rgba(11,10,8,0),rgba(11,10,8,.82) 62%,var(--ink))}
+#frontp .shade{left:0;top:0;bottom:0;width:4.62in;background:linear-gradient(180deg,rgba(11,10,8,.42),rgba(11,10,8,0) 22%,rgba(11,10,8,0) 72%,rgba(11,10,8,.5))}
+#frontp .haze2{right:-2in;bottom:-3.2in;width:7in;height:6in;background:radial-gradient(closest-side,rgba(201,166,108,.18),transparent 70%)}
+#frontp .haze1{left:3.6in;top:-2.4in;width:6in;height:6in;background:radial-gradient(closest-side,rgba(138,52,140,.30),transparent 70%)}
+#frontp .frame{inset:.4in;border:.6px solid rgba(214,182,128,.7)}
+#frontp .copy{left:4.98in;top:.4in;bottom:.4in;width:3.2in;display:flex;flex-direction:column;justify-content:center;align-items:flex-start}
+#frontp .mark{width:1.02in;height:1.02in;margin:0 0 .2in -.05in;filter:drop-shadow(0 0 12px rgba(205,70,215,.4))}
+#frontp .eyebrow{display:flex;align-items:center;gap:.1in;white-space:nowrap;font-size:7.7px;letter-spacing:.3em}
+#frontp .eyebrow b{font-weight:600;color:var(--pink);text-shadow:0 0 9px rgba(240,98,200,.55)}
+#frontp .eyebrow i{width:.5px;height:9px;background:#6d6560}
+#frontp .eyebrow span{color:#cfc6c4}
+#frontp h1{font-size:30.5px;line-height:1.12;margin-top:.22in;white-space:nowrap}
+#frontp p{margin-top:.2in;font-size:10.3px;line-height:1.68;color:#bdb4ab;width:3.05in}
+#frontp .cta{margin-top:.25in;display:inline-flex;align-items:center;gap:.12in;background:linear-gradient(100deg,#c19d62,#dcc392 55%,#c9a66c);color:#17130c;font-weight:600;font-size:10.2px;letter-spacing:.02em;padding:.105in .2in}
+#frontp .cta small{font-weight:500;font-size:10.2px;letter-spacing:.04em}
 .guide{display:none}
 body.guides .guide{display:block;position:absolute;border:1px dashed rgba(0,160,255,.9);color:rgba(0,120,220,.95);font:600 7px Manrope;padding:2px 3px;z-index:9}
 </style></head><body>
@@ -80,6 +98,21 @@ body.guides .guide{display:block;position:absolute;border:1px dashed rgba(0,160,
   <div class="guide" style="inset:.125in">trim</div><div class="guide" style="inset:.375in;border-color:rgba(0,220,120,.9);color:rgb(0,170,90)">safe ¼"</div>
 </section>
 
+
+<section class="card" id="frontp">
+  <div class="abs photo"></div><div class="abs shade"></div><div class="abs fade"></div>
+  <div class="abs haze1"></div><div class="abs haze2"></div>
+  <svg class="abs grain" width="100%" height="100%" style="left:4.62in;width:auto;right:0"><rect width="100%" height="100%" filter="url(#n)"/></svg>
+  <div class="abs frame"></div>
+  <div class="abs copy">
+    <img class="mark" src="logo-dark.png">
+    <div class="eyebrow caps"><b>Grand Opening</b><i></i><span>Miramar Beach, Florida</span></div>
+    <h1 class="serif">Your content engine,<br><span class="goldtxt">in one room.</span></h1>
+    <p>Four sets, 4K multi-camera and broadcast lighting, now open in Miramar Beach. Book by the hour or join as a member, and let yourself in day or night.</p>
+    <div class="cta">Book a session <small>zencontentlab.com&nbsp;&nbsp;→</small></div>
+  </div>
+  <div class="guide" style="inset:.125in">trim</div><div class="guide" style="inset:.375in;border-color:rgba(0,220,120,.9);color:rgb(0,170,90)">safe ¼"</div>
+</section>
 <section class="card" id="back">
   <div class="abs panel">
     <div class="abs haze1"></div><div class="abs haze2"></div>
