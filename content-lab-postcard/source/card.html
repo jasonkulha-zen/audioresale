@@ -60,6 +60,32 @@ html,body{background:#333}
 #back .ret div{font-size:7.6px;line-height:1.55;color:#3a342c;font-weight:400}
 #back .ret b{display:block;font-weight:600;letter-spacing:.24em;font-size:7.2px;text-transform:uppercase;color:#17130c;margin-bottom:1px}
 
+
+#backb{background:var(--ivory);color:#17130c}
+#backb .panel{left:0;top:0;bottom:0;width:3.875in;background:var(--ink);overflow:hidden}
+#backb .haze1{left:-2.4in;top:-2.6in;width:6in;height:6in;background:radial-gradient(closest-side,rgba(138,52,140,.42),rgba(96,40,130,.15) 50%,transparent 72%)}
+#backb .haze2{left:.6in;bottom:-3in;width:5in;height:5in;background:radial-gradient(closest-side,rgba(201,166,108,.16),transparent 70%)}
+#backb .seam{left:3.875in;top:0;bottom:0;width:1.6px;background:linear-gradient(180deg,#b8935a,#e9d6ab 50%,#b8935a)}
+#backb .col{left:.5in;top:.58in;width:2.95in;color:var(--ivory)}
+#backb .eyebrow b{font-weight:600;color:var(--pink);text-shadow:0 0 9px rgba(240,98,200,.55)}
+#backb h2{font-size:24.5px;line-height:1.12;margin-top:.17in}
+#backb .lede{margin-top:.15in;font-size:9.3px;line-height:1.65;color:#bdb4ab}
+#backb ul{list-style:none;margin-top:.2in;border-top:.5px solid rgba(201,166,108,.4)}
+#backb li{display:flex;align-items:baseline;gap:.16in;padding:.082in 0;border-bottom:.5px solid rgba(201,166,108,.4)}
+#backb li em{font-family:Bodoni;font-style:italic;color:var(--gold);font-size:11px;width:.2in}
+#backb li strong{font-weight:500;font-size:9.6px;color:var(--ivory);letter-spacing:.01em}
+#backb li span{margin-left:auto;font-size:8px;color:#9d948b}
+#backb .book{left:.5in;bottom:.5in;width:2.95in;display:flex;align-items:center;gap:.2in;color:var(--ivory)}
+#backb .qr{flex:none;width:.98in;height:.98in;background:var(--ivory);padding:.09in}
+#backb .qr img{display:block;width:100%;height:100%;image-rendering:pixelated}
+#backb .book .t1{color:var(--gold)}
+#backb .book .t2{font-family:Bodoni;font-size:15.5px;margin-top:.07in;line-height:1.15}
+#backb .book .t3{font-size:8.2px;line-height:1.6;color:#bdb4ab;margin-top:.08in}
+#backb .ret{left:4.2in;top:.5in;display:flex;align-items:center;gap:.13in}
+#backb .ret img{width:.62in;height:.62in}
+#backb .ret div{font-size:7.6px;line-height:1.55;color:#3a342c;font-weight:400}
+#backb .ret b{display:block;font-weight:600;letter-spacing:.24em;font-size:7.2px;text-transform:uppercase;color:#17130c;margin-bottom:1px}
+
 /* ---------- FRONT, PHOTO-LED ---------- */
 #frontp .photo{left:0;top:0;bottom:0;width:4.62in;background:url(set.jpg) 50% 62%/cover}
 #frontp .fade{left:3.5in;top:0;bottom:0;width:1.14in;background:linear-gradient(90deg,rgba(11,10,8,0),rgba(11,10,8,.82) 62%,var(--ink))}
@@ -77,6 +103,29 @@ html,body{background:#333}
 #frontp p{margin-top:.2in;font-size:10.3px;line-height:1.68;color:#bdb4ab;width:3.05in}
 #frontp .cta{margin-top:.25in;display:inline-flex;align-items:center;gap:.12in;background:linear-gradient(100deg,#c19d62,#dcc392 55%,#c9a66c);color:#17130c;font-weight:600;font-size:10.2px;letter-spacing:.02em;padding:.105in .2in}
 #frontp .cta small{font-weight:500;font-size:10.2px;letter-spacing:.04em}
+
+/* ---------- BOLD VARIATION ---------- */
+@font-face{font-family:Bebas;src:url(fonts/bebas-neue-latin-400-normal.woff2)}
+.neon{background:linear-gradient(95deg,#7b3dff 0%,#c93be6 48%,#ff2e86 100%);-webkit-background-clip:text;color:transparent;filter:drop-shadow(0 0 14px rgba(214,60,220,.55))}
+#frontb .photo{right:0;top:0;bottom:0;width:3.95in;background:url(set2.png) 58% 50%/cover}
+#frontb .fade{right:2.75in;top:0;bottom:0;width:1.2in;background:linear-gradient(270deg,rgba(11,10,8,0),rgba(11,10,8,.85) 66%,var(--ink))}
+#frontb .shade{right:0;top:0;bottom:0;width:3.95in;background:linear-gradient(180deg,rgba(11,10,8,.35),rgba(11,10,8,0) 25%,rgba(11,10,8,0) 60%,rgba(11,10,8,.75))}
+#frontb .haze1{left:-2.2in;top:-2.6in;width:7in;height:7in;background:radial-gradient(closest-side,rgba(138,52,140,.42),transparent 70%)}
+#frontb .copy{left:.5in;top:.5in;width:5.3in}
+#frontb .eyebrow{display:inline-flex;align-items:center;gap:.1in;font-size:8.6px;letter-spacing:.3em;font-weight:700;color:#17130c;background:linear-gradient(100deg,#c19d62,#e4cfa3 55%,#c9a66c);padding:.07in .14in .065in}
+#frontb .eyebrow i{width:3px;height:3px;border-radius:50%;background:#17130c}
+#frontb h1{font-family:Bebas;font-weight:400;font-size:86px;line-height:.9;letter-spacing:.005em;margin-top:.24in;color:var(--ivory);white-space:nowrap}
+#frontb h1 .neon{font-size:132px;line-height:.86;display:inline-block;margin-top:.06in}
+#frontb .bar{left:0;right:0;bottom:0;height:.86in;background:linear-gradient(95deg,#6a2df0 0%,#c93be6 50%,#ff2e86 100%)}
+#frontb .barin{left:.5in;right:.5in;bottom:.125in;height:.735in;display:flex;align-items:center;justify-content:space-between;color:#fff}
+#frontb .barin .l{font-family:Bebas;font-size:25px;letter-spacing:.06em;line-height:1}
+#frontb .barin .m{font-size:9px;letter-spacing:.04em;font-weight:500;line-height:1.5;opacity:.95}
+#frontb .barin .r{font-weight:700;font-size:11.5px;letter-spacing:.03em;background:#0b0a08;color:#fff;padding:.1in .2in}
+#frontb .mark{right:.46in;top:.46in;width:.98in;height:.98in;filter:drop-shadow(0 0 10px rgba(0,0,0,.8))}
+#backb .seam{background:linear-gradient(180deg,#7b3dff,#c93be6 50%,#ff2e86);width:3px}
+#backb h2{font-family:Bebas;font-weight:400;font-size:36px;line-height:.98;letter-spacing:.012em;margin-top:.16in;white-space:nowrap}
+#backb .lede{margin-top:.13in}
+#backb .book .t1{color:var(--pink)}
 .guide{display:none}
 body.guides .guide{display:block;position:absolute;border:1px dashed rgba(0,160,255,.9);color:rgba(0,120,220,.95);font:600 7px Manrope;padding:2px 3px;z-index:9}
 </style></head><body>
@@ -121,6 +170,47 @@ body.guides .guide{display:block;position:absolute;border:1px dashed rgba(0,160,
       <div class="eyebrow caps"><b>You&rsquo;re Invited</b></div>
       <h2 class="serif">The doors are open.<br><span class="goldtxt">Come make something.</span></h2>
       <p class="lede">A premium content studio in Miramar Beach. Walk in, press record, and leave with content that looks like a full crew made it.</p>
+      <ul>
+        <li><em>01</em><strong>Four sets</strong><span>one studio</span></li>
+        <li><em>02</em><strong>4K multi-camera</strong><span>cinema-sharp</span></li>
+        <li><em>03</em><strong>Broadcast lighting</strong><span>pro-grade</span></li>
+        <li><em>04</em><strong>Day-or-night access</strong><span>hourly or membership</span></li>
+      </ul>
+    </div>
+    <div class="abs book">
+      <div class="qr"><img src="qr.png"></div>
+      <div><div class="caps t1">Scan to book</div><div class="t2">zencontentlab.com</div>
+      <div class="t3">9375 Emerald Coast Parkway, Suite 25<br>Miramar Beach, FL 32550</div></div>
+    </div>
+  </div>
+  <div class="abs seam"></div>
+  <div class="abs ret"><img src="logo-light.png"><div><b>The Content Lab</b>9375 Emerald Coast Parkway, Suite 25<br>Miramar Beach, FL 32550</div></div>
+  <div class="guide" style="inset:.125in">trim</div><div class="guide" style="inset:.375in;border-color:rgba(0,220,120,.9);color:rgb(0,170,90)">safe ¼"</div>
+  <div class="guide" style="right:.125in;bottom:.125in;width:4.75in;height:.625in;border-color:rgba(255,80,0,.9);color:rgb(220,70,0)">USPS barcode clear zone</div>
+  <div class="guide" style="right:.375in;top:.375in;width:1.3in;height:1.1in;border-color:rgba(255,80,0,.9);color:rgb(220,70,0)">postage</div>
+  <div class="guide" style="right:.5in;bottom:.95in;width:3.6in;height:2in;border-color:rgba(255,80,0,.9);color:rgb(220,70,0)">address block (printed by Mailbox Power)</div>
+</section>
+<section class="card" id="frontb">
+  <div class="abs photo"></div><div class="abs shade"></div><div class="abs fade"></div>
+  <div class="abs haze1"></div>
+  <svg class="abs grain" width="100%" height="100%" style="width:4.8in"><rect width="100%" height="100%" filter="url(#n)"/></svg>
+  <div class="abs copy">
+    <div class="eyebrow caps"><span>Grand Opening</span><i></i><span>Miramar Beach</span></div>
+    <h1>Your phone is<br>not a studio.<br><span class="neon">This is.</span></h1>
+  </div>
+  <img class="abs mark" src="logo-dark.png">
+  <div class="abs bar"></div>
+  <div class="abs barin"><div class="l">Four sets &nbsp;·&nbsp; 4K cameras &nbsp;·&nbsp; Pro lighting</div><div class="m">Book by the hour or join as a member.<br>Open day &amp; night.</div><div class="r">zencontentlab.com&nbsp;&nbsp;→</div></div>
+  <div class="guide" style="inset:.125in">trim</div><div class="guide" style="inset:.375in;border-color:rgba(0,220,120,.9);color:rgb(0,170,90)">safe ¼"</div>
+</section>
+<section class="card" id="backb">
+  <div class="abs panel">
+    <div class="abs haze1"></div><div class="abs haze2"></div>
+    <svg class="abs grain" width="100%" height="100%"><rect width="100%" height="100%" filter="url(#n)"/></svg>
+    <div class="abs col">
+      <div class="eyebrow caps"><b>You&rsquo;re Invited</b></div>
+      <h2>Walk in. Press record.<br><span class="neon">Walk out looking pro.</span></h2>
+      <p class="lede">The Content Lab is now open in Miramar Beach: a premium studio with the sets, cameras and lighting already waiting for you.</p>
       <ul>
         <li><em>01</em><strong>Four sets</strong><span>one studio</span></li>
         <li><em>02</em><strong>4K multi-camera</strong><span>cinema-sharp</span></li>
